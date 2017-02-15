@@ -20,5 +20,8 @@
 -->
 # Release Notes
 
+### 1.0.0 (Feb 15, 2017)
+* Initial Github release
+
 ### 0.0.1 (Jan 05, 2017)
 * created Entitlement Plugin
