@@ -1,0 +1,27 @@
+{
+  "name": "aemm-plugin-entitlement",
+  "version": "0.0.1-dev",
+  "description": "AEMM Entitlement Plugin",
+  "cordova": {
+    "id": "aemm-plugin-entitlement",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adobe-marketing-cloud-mobile/aemm-plugin-entitlement.git"
+  },
+  "keywords": [
+    "cordova",
+    "entitlement",
+    "cordova-ios",
+    "cordova-android",
+    "aem",
+    "aemm",
+    "aemmobile"
+  ],
+  "author": "Adobe",
+  "license": "Apache 2.0"
+}

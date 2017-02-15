@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:rim="http://www.blackberry.com/ns/widgets"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="aemm-plugin-entitlement"
+    version="0.0.1-dev">
+    <name>AEMM Entitlement Plugin</name>
+    <description>AEMM Entitlement Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,entitlement,aem,aemm,aemmobile</keywords>
+    <repo>https://github.com/adobe-marketing-cloud-mobile/aemm-plugin-entitlement.git</repo>
+
+	<js-module src="www/CQMEntitlementError.js" name="cq.mobile.entitlementError">
+		<clobbers target="cq.mobile.entitlementError" />
+	</js-module>
+
+	<js-module src="www/CQMEntitlement.js" name="cq.mobile.entitlement">
+		<clobbers target="cq.mobile.entitlement" />
+	</js-module>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="CQMEntitlement">
+                <param name="ios-package" value="CQMEntitlement"/>
+            </feature>
+        </config-file>
+    </platform>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="CQMEntitlement">
+                <param name="android-package" value="com.adobe.dps.viewer.extensibility.entitlement.CQMEntitlement"/>
+            </feature>
+        </config-file>
+    </platform>
+
+    <!-- windows -->
+    <platform name="windows">
+        <js-module src="src/windows/CQMEntitlementProxy.js" name="CQMEntitlementProxy">
+            <runs />
+        </js-module>
+    </platform>
+</plugin>
