@@ -1,6 +1,6 @@
 {
   "name": "aemm-plugin-entitlement",
-  "version": "1.0.0",
+  "version": "1.0.1-dev",
   "description": "AEMM Entitlement Plugin",
   "cordova": {
     "id": "aemm-plugin-entitlement",
